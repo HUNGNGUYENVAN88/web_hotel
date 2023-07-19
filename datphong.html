@@ -61,7 +61,7 @@
         opacity: 0.9;
     }
     .foot{
-        background-color: black;
+        background-color: antiquewhite;
         width: 100%;
         margin-top: 30px;
         height: 250px;
@@ -72,7 +72,39 @@
         width: 25%;
         height: 250px;
         border-right: 1px solid white;
+        padding: 3%;
     }
+    .foot-items img{
+        width: 10%;
+
+    }
+    .dat_phong{
+        width: 100%;
+        height: 500px;
+        
+        margin-top: 100px;
+        display: flex;
+        background-color: whitesmoke;
+        margin-bottom: 100px;
+        }
+
+    .dat_phong_form{
+        width: 40%;
+        height: 500px;
+        
+        padding: 20px 5% 0 5%;
+        font-size: 20px;
+        
+    }
+    .dat_phong_pic{
+        width: 60%;
+        height: 500px;
+        
+        background-image: url(images/thiet-ke-phong-ngu-khach-san-1.jpg);
+        background-size: cover;
+        border-radius:0 50px 0 50px ;
+    }
+
 </style>
 <body>
     <div class="head">
@@ -90,14 +122,65 @@
         <h1>Đặt phòng</h1>
       </div>
     </div>
+    <div class="dat_phong">
+    <div class = "dat_phong_form">
+    <form action="/submit_booking" method="POST">
+        <label for="full_name">Họ và tên:</label>
+        <input type="text" id="full_name" name="full_name" required><br><br>
       
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+      
+        <label for="phone">Số điện thoại:</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+      
+        <label for="check_in_date">Ngày nhận phòng:</label>
+        <input type="date" id="check_in_date" name="check_in_date" required><br><br>
+      
+        <label for="check_out_date">Ngày trả phòng:</label>
+        <input type="date" id="check_out_date" name="check_out_date" required><br><br>
+      
+        <label for="room_type">Loại phòng:</label>
+        <select id="room_type" name="room_type" required>
+          <option value="">Chọn loại phòng</option>
+          <option value="standard">Phòng Delux hướng phố</option>
+          <option value="deluxe">Phòng Family hướng vườn</option>
+          <option value="suite">Phòng Superior phố Cổ</option>
+        </select><br><br>
+        <label for="num_rooms">Số phòng:</label>
+        <input type="number" id="num_rooms" name="num_rooms" min="1" required><br><br>
+        <label for="additional_requests">Yêu cầu thêm:</label>
+        <textarea id="additional_requests" name="additional_requests" rows="4"></textarea><br><br>
+      
+        <input type="submit" value="Đặt phòng">
+      </form>
+    </div>
+    <div class="dat_phong_pic"></div>
+    </div>
 </body>
 <footer>
     <div class="foot">
-        <div class="foot-items"></div>
-        <div class="foot-items"></div>
-        <div class="foot-items"></div>
-        <div class="foot-items"></div>
+        <div class="foot-items">
+            <h3>Theo dõi chúng tôi</h3>
+            <img src="images/facebook.png">
+            <img src="images/twitter.png">
+            <img src="images/instagram.png">
+            <img src ="images/whatsapp.png">
+        </div>
+        <div class="foot-items">
+            <h3>Liên lạc với chúng tôi</h3>
+            <p>Tel: 012345678</p>
+            <p>Email: Étiene@gmail.com</p>
+        </div>
+        <div class="foot-items">
+            <h3>Địa chỉ</h3>
+            <p>44 Hàng Bún, Phố Cổ, Hoàn Kiếm, Hà Nội</p>
+        </div>
+        <div class="foot-items">
+            <h3>Thanh toán</h3>
+            <img src="images/visa.png">
+            <img src="images/money.png">
+        </div>
     </div>
 </footer>
 </html>

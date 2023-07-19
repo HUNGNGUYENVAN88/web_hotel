@@ -59,9 +59,84 @@
         font-size: 50px;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         opacity: 0.9;
+    }.phong{
+        width: 100%;
+        height:600px;
+        display: flex;
+        margin-top: 30px;
+    }
+   
+
+    .phong1{
+        width: 32%;
+        height: 600px;
+        margin-right: 2%;
+        background-color: whitesmoke;
+     
+    }
+    .phong1 img,.phong2 img,.phong3 img,.feedback_s1 img,.feedback_s2 img,.feedback_s3 img{
+        width: 100%;
+        height: 250px;
+        background-size: cover;
+    }
+    .phong11{
+        padding-left: 20px;
+    }
+    .phong11 img{
+        width: 10%;
+        height: 40px;
+         
+    }  
+    .more_p11{
+        color: black;
+        font-size: 20px;
+        padding: 5px;
+        text-decoration: none;
+        color: red;
+        border: 2px solid red;
+    }
+    
+    .phong2{
+        width: 32%;
+        height: 600px;
+        margin-right: 2%;
+        background-color: whitesmoke;
+        
+    }
+    .phong3{
+        width: 32%;
+        height: 600px;
+        background-color: whitesmoke;
+    }
+
+    .more_gt1{
+        font-size: 34px;
+        line-height: 2;
+        font-weight: 400;
+        letter-spacing: 5px;
+        margin: 0;
+        text-transform: none;
+        margin-bottom: 60px;
+        text-align: left;
+    }
+    .more_gt2{
+        font-size: 20px;
+        line-height: 1.4;
+        letter-spacing: 5px;
+        margin: 0;
+        text-transform: none;
+        text-decoration: none;
+        text-align: left;
+        color: black;
+
+    }
+    .more_gt0{
+        letter-spacing: 5px;
+        font-size: 16px;
+        padding-bottom: 40px;
     }
     .foot{
-        background-color: black;
+        background-color: antiquewhite;
         width: 100%;
         margin-top: 30px;
         height: 250px;
@@ -72,31 +147,14 @@
         width: 25%;
         height: 250px;
         border-right: 1px solid white;
+        padding: 3%;
     }
-    .phong{
-        width: 100%;
-        height:400px;
-        display: flex;
-        border: 1px solid black;
-        margin-top: 30px;
+    .foot-items img{
+        width: 10%;
+
     }
-    .phong1{
-        width: 32%;
-        height: 400px;
-        border-right: 1px solid black;
-        margin-right: 2%;
-    }
-    .phong2{
-        width: 32%;
-        height: 400px;
-        border-right: 1px solid black;
-        margin-right: 2%;
-    }
-    .phong3{
-        width: 32%;
-        height: 400px;
-        border-right: 1px solid black;
-    }
+    
+    
 
 </style>
 <body>
@@ -116,18 +174,62 @@
       </div>
     </div>
     <div class = "phong">
-        <div class = "phong1"></div>
-        <div class = "phong2"></div>
-        <div class = "phong3"></div>
+        <div class = "phong1">
+            <img src="images/hotel-caitilin-1952m2-phong-ngu-01-decox-design.jpg">
+            <div class = "phong11">
+            <h2>Phòng Delux hướng phố</h2>
+            <p><img src="images/person_FILL0_wght400_GRAD0_opsz48.png"> &nbsp; 2 người lớn</p>
+            <p><img src="images/bed_FILL0_wght400_GRAD0_opsz48.png"> &nbsp; 1 giường đôi lớn</p>
+            <p><img src="images/payments_FILL0_wght400_GRAD0_opsz48.png"> &nbsp; 1.200.000 VND </p><br>
+            <a class="more_p11" href="datphong.html"> Đặt phòng</a>
+        </div>
+        </div>
+        <div class = "phong2">
+            <img src="images/mau-thiet-ke-phong-ngu-2-giuong-cho-khong-gian-khach-san (4).jpg">
+            <div class = "phong11">
+            <h2>Phòng Family hướng vườn</h2>
+            <p><img src="images/person_FILL0_wght400_GRAD0_opsz48.png"> &nbsp; 4 người lớn</p>
+            <p><img src="images/bed_FILL0_wght400_GRAD0_opsz48.png"> &nbsp; 2 giường đôi lớn</p>
+            <p><img src="images/payments_FILL0_wght400_GRAD0_opsz48.png"> &nbsp; 1.600.000 VND </p><br>
+            <a class="more_p11" href="datphong.html"> Đặt phòng</a>
+        </div>
+        </div>
+        <div class = "phong3">
+            <img src="images/thiet-ke-phong-ngu-khach-san-1.jpg">
+            <div class = "phong11">
+            <h2>Phòng Superior phố Cổ</h2>
+            <p><img src="images/person_FILL0_wght400_GRAD0_opsz48.png"> &nbsp; 2 người lớn</p>
+            <p><img src="images/bed_FILL0_wght400_GRAD0_opsz48.png"> &nbsp; 1 giường đôi lớn</p>
+            <p><img src="images/payments_FILL0_wght400_GRAD0_opsz48.png"> &nbsp; 1.600.000 VND </p><br>
+            <a class="more_p11" href="datphong.html"> Đặt phòng</a>
+        </div>
+        </div>
     </div>
       
 </body>
 <footer>
     <div class="foot">
-        <div class="foot-items"></div>
-        <div class="foot-items"></div>
-        <div class="foot-items"></div>
-        <div class="foot-items"></div>
+        <div class="foot-items">
+            <h3>Theo dõi chúng tôi</h3>
+            <img src="images/facebook.png">
+            <img src="images/twitter.png">
+            <img src="images/instagram.png">
+            <img src ="images/whatsapp.png">
+        </div>
+        <div class="foot-items">
+            <h3>Liên lạc với chúng tôi</h3>
+            <p>Tel: 012345678</p>
+            <p>Email: Étiene@gmail.com</p>
+        </div>
+        <div class="foot-items">
+            <h3>Địa chỉ</h3>
+            <p>44 Hàng Bún, Phố Cổ, Hoàn Kiếm, Hà Nội</p>
+        </div>
+        <div class="foot-items">
+            <h3>Thanh toán</h3>
+            <img src="images/visa.png">
+            <img src="images/money.png">
+        </div>
     </div>
 </footer>
 </html>

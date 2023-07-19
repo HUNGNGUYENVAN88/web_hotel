@@ -61,7 +61,7 @@
         opacity: 0.5;
     }
     .foot{
-        background-color: black;
+        background-color: antiquewhite;
         width: 100%;
         margin-top: 30px;
         height: 250px;
@@ -72,6 +72,11 @@
         width: 25%;
         height: 250px;
         border-right: 1px solid white;
+        padding: 3%;
+    }
+    .foot-items img{
+        width: 10%;
+
     }
     .gioithieu_1,.nhahang{
         width: 100%;
@@ -131,6 +136,8 @@
         display: flex;
         margin-top: 30px;
     }
+   
+
     .phong1{
         width: 32%;
         height: 600px;
@@ -138,7 +145,7 @@
         background-color: whitesmoke;
      
     }
-    .phong1 img,.phong2 img,.phong3 img{
+    .phong1 img,.phong2 img,.phong3 img,.feedback_s1 img,.feedback_s2 img,.feedback_s3 img{
         width: 100%;
         height: 250px;
         background-size: cover;
@@ -165,6 +172,7 @@
         height: 600px;
         margin-right: 2%;
         background-color: whitesmoke;
+        
     }
     .phong3{
         width: 32%;
@@ -212,13 +220,13 @@
         margin: 0 20% 0 5%;
         border-radius: 0 50px 0 50px;
     }
-    .nhahang{
+    .nhahang,.spa{
         display: flex;
         width: 100%;
         height: 500px;
         margin-top: 100px;
     }
-    .nh_1{
+    .nh_1,.sp1{
         width: 40%;
         height: 500px;
         padding: 0px 3%;
@@ -242,6 +250,35 @@
         width: 60%;
         height: 500px;  
     }
+    .sp2{
+        background-image: url(images/spa.jpg);
+        background-size: cover;
+        border-radius: 0 50px 0 50px;
+        width: 60%;
+        height: 500px;  
+    }
+    .feedback{
+        width: 100%;
+        height:600px;
+        display: flex;
+        margin-top: 30px;
+    }
+    .feedback_s1,.feedback_s2{
+        width: 32%;
+        height: 600px;
+        margin-right: 2%;
+        background-color: whitesmoke;
+
+    }
+    .feedback_s3{
+        width: 32%;
+        height: 600px;
+        background-color: whitesmoke;
+    }
+    .feedback_s11{
+        padding:0 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+
     
   
 
@@ -329,7 +366,7 @@
         <div class = "nh_1">
             <h1>Sky Bar</h1>
             <p style="color:rgb(137, 137, 137)">Hãy đến và khám phá Sky Bar của chúng tôi, nơi bạn có thể thư giãn và tận hưởng không gian cao cấp, cocktail tuyệt vời và không khí tuyệt hảo. Chúng tôi rất mong được chào đón bạn và mang đến cho bạn một trải nghiệm tuyệt vời tại Sky Bar của khách sạn chúng tôi.</p>
-            <a href="gioithieu.html" class = "more_gt2">XEM THÊM ></a>
+            <a href="dichvu.html" class = "more_gt2">XEM THÊM ></a>
         </div>
         <div class = "nh_2"></div>
     </div>
@@ -338,28 +375,73 @@
         <div class = "nh_1" style="background-color: whitesmoke;">
             <h1>Nhà hàng</h1>
             <p style="color:rgb(137, 137, 137)">Chào mừng bạn đến với nhà hàng của khách sạn chúng tôi - một địa điểm tuyệt vời để thưởng thức ẩm thực đa dạng và trải nghiệm những món ngon độc đáo.Với kiến trúc sang trọng và thiết kế nội thất tinh tế, chúng tôi tạo ra một không gian đẹp mắt và thoải mái, nơi bạn có thể tận hưởng bữa ăn ngon và thư giãn.</p>
-            <a href="gioithieu.html" class = "more_gt2">XEM THÊM ></a>
+            <a href="dichvu.html" class = "more_gt2">XEM THÊM ></a>
         </div>`
     </div>
     <div class="spa">
-        <div class = "sp1"></div>
+        <div class = "sp1">
+            <h1>Spa Étiene</h1>
+            <p style="color:rgb(137, 137, 137)">Chào mừng quý khách đến với spa của chúng tôi tại khách sạn chúng tôi! Tại đây, chúng tôi cam kết mang đến cho quý khách trải nghiệm thư giãn tuyệt vời và mang lại sự cân bằng cho cơ thể và tinh thần của quý khách</p>
+            <a href="dichvu.html" class = "more_gt2">XEM THÊM ></a>
+        </div>
         <div class = "sp2"></div>
     </div>
+    <h1 style="text-align:center ;margin: 100px;font-size: 40px;">Sự ghi nhận</h1>
     <div class = "feedback">
-        <h></h>
-        <div class="feedback_b">
-            <div class="feedback_s"></div>
-            <div class="feedback_s"></div>
-            <div class="feedback_s"></div>
+        <div class="feedback_s1">
+            <img src="images/khach1.jpg">
+            <div class="feedback_s11">
+            <h2> AnhSan Joe</h2>
+            <p><b>"Vị trí tốt, khuôn viên đẹp, ăn ngon"</b></p>
+            <p>Diện tích ngoại khu rộng, gần nhiều hồ, công viên cây xanh lớn. di chuyển thuận tiện ra sân bay, kết nối các điểm trung tâm thành phố</p>
+            <p><b>Điểm: 9.5/10</b></p>
+        </div>
+        </div>
+            <div class="feedback_s2">
+                <img src="images/khach2.jpg">
+                <div class="feedback_s11">
+                <h2>Chị Ly Nguyễn</h2>
+                <p><b>"Vị trí tốt, khuôn viên đẹp, ăn ngon"</b></p>
+                <p>Diện tích ngoại khu rộng, gần nhiều hồ, công viên cây xanh lớn. di chuyển thuận tiện ra sân bay, kết nối các điểm trung tâm thành phố</p>
+                <p><b>Điểm: 9.5/10</b></p>
+            </div>
+            </div>
+            <div class="feedback_s3">
+                <img src="images/khach3.jpg">
+                <div class="feedback_s11">
+                <h2>Anh BaoMing</h2>
+                <p><b>"Vị trí tốt, khuôn viên đẹp, ăn ngon"</b></p>
+                <p>Diện tích ngoại khu rộng, gần nhiều hồ, công viên cây xanh lớn. di chuyển thuận tiện ra sân bay, kết nối các điểm trung tâm thành phố</p>
+                <p><b>Điểm: 9.5/10</b></p>
+            </div>
+            </div>
+            </div>
         </div>
     </div>
 </body>
 <footer>
     <div class="foot">
-        <div class="foot-items"></div>
-        <div class="foot-items"></div>
-        <div class="foot-items"></div>
-        <div class="foot-items"></div>
+        <div class="foot-items">
+            <h3>Theo dõi chúng tôi</h3>
+            <img src="images/facebook.png">
+            <img src="images/twitter.png">
+            <img src="images/instagram.png">
+            <img src ="images/whatsapp.png">
+        </div>
+        <div class="foot-items">
+            <h3>Liên lạc với chúng tôi</h3>
+            <p>Tel: 012345678</p>
+            <p>Email: Étiene@gmail.com</p>
+        </div>
+        <div class="foot-items">
+            <h3>Địa chỉ</h3>
+            <p>44 Hàng Bún, Phố Cổ, Hoàn Kiếm, Hà Nội</p>
+        </div>
+        <div class="foot-items">
+            <h3>Thanh toán</h3>
+            <img src="images/visa.png">
+            <img src="images/money.png">
+        </div>
     </div>
 </footer>
 </html>
